@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--布局添加点击事件clickable可以直接对布局进行点击监听，
+同时为了符合Material Design 设计规则不对元素进行间距设置-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="16dp"
+              android:paddingTop="16dp"
+              android:paddingBottom="16dp"
+              android:paddingRight="16dp"
+              android:orientation="horizontal"
+              android:clickable="true">
+    <ImageView
+        android:id="@+id/iv_zhihu_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/ios"/>
+    <!--当布局当中某一元素设定了weight之后，其他元素未设定weight，则其占据其余空间-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:id="@+id/tv_zhihu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="3"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

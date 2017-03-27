@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="界面">
+        <SwitchPreference
+            android:key="temp_unit"
+            android:summaryOff="关"
+            android:summaryOn="开"
+            android:title="切换变色"/>
+        <SwitchPreference
+            android:key="animation_switch"
+            android:summaryOn="开启效果"
+            android:summaryOff="关闭动画"
+            android:title="布局动画"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="系统设置">
+        <Preference
+            android:key="update_time_change"
+            android:title="刷新频率"/>
+        <Preference
+            android:key="clear_cache"
+            android:title="当前缓存"/>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/gank_part"
+            android:icon="@drawable/ic_nav_gank"
+            android:title="Development"/>
+        <item
+            android:id="@+id/zhihu_part"
+            android:icon="@drawable/ic_nav_zhihu"
+            android:title="ZhiHu"/>
+        <item
+            android:id="@+id/bookmark_part"
+            android:icon="@drawable/ic_nav_bookmark"
+            android:title="Collection"/>
+    </group>
+    <!--<group-->
+        <!--android:id="@+id/night"-->
+        <!--android:checkableBehavior="single">-->
+
+    <!--</group>-->
+
+
+    <item android:title="Gankist">
+        <menu>
+            <item
+                android:id="@+id/night_mode"
+                android:icon="@drawable/ic_nav_night"
+                android:title="夜间模式"
+                app:actionLayout="@layout/nav_night_layout"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_nav_setting"
+                android:title="通用设置"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_nav_about"
+                android:title="关于"/>
+        </menu>
+    </item>
+</menu>

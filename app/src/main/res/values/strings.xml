@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gankist</string>
+
+    <!--DrawerLayout初始化-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="more_loader_hint">加载中</string>
+    <string name="search_bookmarks">Search</string>
+    <string name="network_error">出现网络错误</string>
+    <string name="action_open_in_browser">浏览器中打开</string>
+    <string name="refresh">刷新</string>
+    <string name="double_click_exit">再按一次退出</string>
+</resources>

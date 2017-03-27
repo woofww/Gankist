@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="primary_dark">#455A64</color>-->
+    <!--status暂时设定为颜色一致-->
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="accent">#607D8B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#bfbfbf</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="selected_text">#FFFFFF</color>
+
+    <!--viewpager切换颜色-->
+    <color name="android">#71a763</color>
+    <color name="ios">#7c7c7c</color>
+    <color name="front_end">#a64a4a</color>
+    <color name="app">#51929f</color>
+    <color name="recommend">#b68557</color>
+    <color name="all">#8763ab</color>
+</resources>
