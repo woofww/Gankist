@@ -25,7 +25,7 @@ public class GlideHelper {
                 .asBitmap()
                 .skipMemoryCache(true)
                 .centerCrop()
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(view);
     }
 
