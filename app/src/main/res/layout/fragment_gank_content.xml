@@ -16,5 +16,12 @@
             android:layout_height="wrap_content"
             android:scrollbars="vertical">
         </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/iv_network_error"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@mipmap/empty_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 </RelativeLayout>

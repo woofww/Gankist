@@ -3,34 +3,81 @@
 <!--布局添加点击事件clickable可以直接对布局进行点击监听，
 同时为了符合Material Design 设计规则不对元素进行间距设置-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_item_collection"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
               android:paddingLeft="16dp"
-              android:paddingTop="16dp"
-              android:paddingBottom="16dp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
               android:paddingRight="16dp"
               android:orientation="horizontal"
               android:clickable="true">
-    <ImageView
-        android:id="@+id/iv_zhihu_img"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center_vertical"
-        android:scaleType="centerCrop"
-        android:background="@mipmap/ios"/>
-    <!--当布局当中某一元素设定了weight之后，其他元素未设定weight，则其占据其余空间-->
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_marginLeft="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
         <TextView
-            android:id="@+id/tv_zhihu_title"
+            android:id="@+id/tv_item_title_collection"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="2"
+            android:textColor="#323232"
+            android:text="主题换色，测试测试测试测试测试"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:maxLines="3"/>
-    </RelativeLayout>
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"/>
+            <TextView
+                android:id="@+id/tv_item_type_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp"
+                android:text="Android"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_author" />
+
+            <TextView
+                android:id="@+id/tv_item_publisher_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp"
+                tools:text="代码家" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/tv_item_time_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp"
+                tools:text="2016-12-08" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 
