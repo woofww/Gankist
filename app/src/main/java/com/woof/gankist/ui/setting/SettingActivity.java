@@ -4,11 +4,13 @@ import android.os.Bundle;
 
 import com.woof.gankist.R;
 import com.woof.gankist.base.ToolBarActivity;
+import com.woof.gankist.ui.MainActivity;
+
+import shortbread.Shortcut;
 
 /**
  * Created by Woof on 3/27/2017.
  */
-
 public class SettingActivity extends ToolBarActivity {
     @Override
     protected int provideContentViewId() {
