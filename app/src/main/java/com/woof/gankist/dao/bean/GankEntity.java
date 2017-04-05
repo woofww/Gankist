@@ -1,4 +1,4 @@
-package com.woof.gankist.dao.entity;
+package com.woof.gankist.dao.bean;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -17,6 +17,8 @@ public class GankEntity implements Serializable{
     public List<Entity> entities;
 
     public static class Entity implements Serializable{
+        @SerializedName("_id")
+        public String id;
         @SerializedName("createdAt")
         public String createdAt;
 

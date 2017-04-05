@@ -1,4 +1,4 @@
-package com.woof.gankist.dao.entity;
+package com.woof.gankist.dao.bean;
 
 import com.google.gson.annotations.SerializedName;
 
